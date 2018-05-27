@@ -1,0 +1,509 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HowSTAT! T20 Cricket - Michael Bates - Progressive Batting</title>
+<meta name="description" content="T20 Cricket - Bates, M D - Career batting innings with dates, opponents, venues, 
+progressive average, aggregate, how dismissed and dismissing bowler">
+<link rel="stylesheet" href="../../styles/howstat.css">
+<script type="text/javascript" src="../../includes/JQuery.js"></script>
+<script type="text/javascript">
+<!--
+	jQuery(document).ready(function()
+	{
+		var test = document.getElementById("test");
+		var country = document.getElementById("cboCountry");
+		var d = new Date();
+		d = d.getTime();
+		if (jQuery('#reloadValue').val().length == 0)
+		{
+						jQuery('#reloadValue').val(d);
+						jQuery('body').show();
+		}
+		else
+		{
+						jQuery('#reloadValue').val('');
+						location.reload();
+		}
+	});
+//-->
+</script>
+</head>
+
+<body marginheight="0" marginwidth="0" onunload="">
+<input id="reloadValue" type="hidden" name="reloadValue" value="" />
+<form name="frmStat" action="PlayerProgressBat_T20.asp" method="post">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" height="100%">
+  <tr>
+    <td colspan=3 bgcolor="black" valign="top" height=17>   
+    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+  <tr>
+    <td width="160">&nbsp;
+    </td>
+    <td align="left" valign="middle" class="TextWhite8">
+      <a name="TopOfPage"></a>
+      <a href="http://www.howstat.com/cricket/AboutUs.asp" class="TextWhite8">
+        About Us
+      </a>         
+      |
+      <a href="http://www.howstat.com/cricket/Feedback.asp" class="TextWhite8">
+        Feedback
+      </a>         
+      |
+      <a href="http://www.howstat.com/cricket/AskTheExpert.asp" class="TextWhite8">
+        Ask the Statistician
+      </a>
+      |
+      <a href="http://www.howstat.com/cricket/AdvertisingInfo.asp" class="TextWhite8">
+        Advertise on Howstat
+      </a>
+      |
+      <a href="http://www.howstat.com/cricket//Statistics/Players/PlayerComparison.asp" class="TextWhite8">
+        Compare Players
+      </a>      
+    </td>
+  </tr> 
+</table>
+
+
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="black" valign="top">   
+      <table border="0" cellspacing="0" cellpadding="0" width="162" bgcolor="black">
+  <tr>
+    <td valign="top" align="center" width="100%">
+      <!-- if this line breaks it creates a "bulge" in outline when selected -->
+      <a href="http://www.howstat.com/cricket/home.asp"><img src="http://www.howstat.com/cricket/images/logo.gif" alt="Home Page" title="HOme" border="0" WIDTH="80" HEIGHT="60"><br></a>             
+    </td>
+  </tr>
+</table>  
+<br><br><br><br>
+<table width="162" border="0" cellpadding="2" cellspacing="0" bgcolor="black">
+  <tr>
+    <td>  
+      <a href="http://www.howstat.com/cricket/Statistics/Players/PlayerMenu.asp" class="MainMenu">Players</a>
+    </td>
+  </tr>
+  <tr>
+    <td>  
+      <a href="http://www.howstat.com/cricket/Statistics/Matches/MatchListMenu.asp" class="MainMenu">Match Lists & Scorecards</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>  
+      <a href="http://www.howstat.com/cricket/Statistics/Series/SeriesListMenu.asp" class="MainMenu">Series Lists</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>  
+      <div class="MainMenu2">More Records/Statistics</div>
+      <a href="http://www.howstat.com/cricket/Statistics/AllRounders/AllRoundersMenu.asp" class="SubMenu">All Rounders</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Batting/BattingMenu.asp" class="SubMenu">Batting</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Bowling/BowlingMenu.asp" class="SubMenu">Bowling</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Captaincy/CaptaincyMenu.asp" class="SubMenu">Captaincy</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Countries/CountryList.asp" class="SubMenu">Countries</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Dismissals/DismissalMenu.asp" class="SubMenu">Dismissals</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Fielding/FieldingMenu.asp" class="SubMenu">Fielding</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Grounds/GroundMenu.asp"" class="SubMenu">Grounds</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Matches/MatchMenu.asp" class="SubMenu">Matches</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Series/SeriesMenu.asp" class="SubMenu">Series</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/WicketKeeping/WicketKeepingMenu.asp" class="SubMenu">Wicket Keeping</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/WorldCup/WorldCupMenu.asp" class="SubMenu">World Cup</a><br>            
+      <a href="http://www.howstat.com/cricket/Statistics/WSC/WSCMenu.asp" class="SubMenu">World Series Cricket</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Misc/MiscMenu.asp" class="SubMenu">Other...</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/IPL/IPLMenu.asp" class="SubMenu">IPL</a><br>
+    </td>
+  </tr>    
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Articles/Milestones.asp" class="MainMenu">Upcoming Milestones</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Articles/RecentRecords.asp" class="MainMenu">Recent Records</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>  
+      <div class="MainMenu2">Ratings</div>
+      <a href="http://www.howstat.com/cricket/Statistics/WorldXI.asp" class="SubMenu">World XI (Test)</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/WorldXI_ODI.asp" class="SubMenu">World XI (ODI)</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/TopTen.asp" class="SubMenu">Top Ten (Test)</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/TopTen_ODI.asp" class="SubMenu">Top Ten (ODI)</a><br>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Search.asp" class="MainMenu">Search HowSTAT</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Quiz/Quiz.asp" class="MainMenu">HowSTAT Quiz</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Links.asp" class="MainMenu">Links</a>
+    </td>
+  </tr>    
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td>
+			<a class="MenuLinkOff"  href="http://www.howstat.com/cricket/Promotions/CounterAttackingBatting.asp" target="CricketSportsbook">Counter Attacking Batting</a>
+    </td>
+  </tr>	
+  <tr>
+    <td>  
+      <a class="MainMenu" href="http://www.cricketgames.me" target="ExternalLink">Cricket Games</a>
+    </td>
+  </tr>		
+</table>
+
+    </td>
+    <td>&nbsp;
+    </td>
+    <td valign="top" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr><td height=3></td></tr>
+        <tr>
+          <td class="Banner3" width="100%" nowrap align="left" height="25">
+            &nbsp;
+            Michael Bates (New Zealand)
+            - T20 Internationals
+          </td>
+        </tr>
+        <tr>
+          <td height="7">
+          </td>
+        </tr>
+      </table>
+			
+      <table border=0 width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <div class="TextSubHead">
+            Batting - Progressive Average and Aggregate
+            </div>
+
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;Versus
+                </td>
+                <td align="left">
+                  &nbsp;
+                  <select name="cboVersus" size="1" style="width: 125">
+                  <option value=""  
+                selected  
+                    >&lt;All Countries&gt</option>
+                
+                      <option value="06"
+                  
+                    >South Africa</option>
+                
+                      <option value="09"
+                  
+                    >Zimbabwe</option>
+                    
+                  </select>
+                </td>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;&nbsp;&nbsp;at
+                </td>
+                <td align="left" colspan=2>
+                  &nbsp;
+                  <select name="cboGrounds" size="1" style="width: 290">
+                    <option value=""  
+                  selected  
+                      >&lt;All Grounds&gt</option>
+                  
+                        <option value="018"
+                    
+                      >Eden Park</option>
+                  
+                        <option value="061"
+                    
+                      >Seddon Park</option>
+                      
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;Year
+                </td>
+                <td align="left">
+                  &nbsp;
+                  <select name="cboYears" size="1" style="width: 125">
+                  <option value="0"  
+                  
+                    >&lt;All Years&gt</option>
+                  
+                      <option value="2012"
+                  
+                    >2012</option>
+                    
+                  </select>
+              </td>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;&nbsp;&nbsp;Series
+                </td>
+                <td align="left">
+                  &nbsp;
+                  <select name="cboSeries" size="1" style="width: 290">
+                    <option value=""  
+                  selected  
+                      >&lt;All Series&gt</option>
+                  
+                      <option value="0082"
+                  
+                    >2011-2012 2011-2012 New Zealand v. South Africa</option>
+                
+                      <option value="0081"
+                  
+                    >2011-2012 2011-2012 New Zealand v. Zimbabwe</option>
+                    
+                  </select>
+                </td>
+                <td align="right">
+                  &nbsp;
+                  <input type="submit" name="btnSubmit" value="Find" style="position: relative; top: -2px">
+                </td>
+              </tr>
+            </table>      
+            <div class="Spacer6">&nbsp;</div>
+            
+							
+							<table class="TableLined" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td class="TableHeadingLeft" colspan="9">
+                    &nbsp;
+                  </td>
+                  <td class="TableHeadingCentre" colspan="3">
+                    Progressive
+                  </td>
+                <tr>  
+                <tr>
+                  <td class="TableHeadingNO">
+                    &nbsp;
+                  </td>
+                  <td class="TableHeadingDate">
+                    Date
+                  </td>
+                  <td class="TableHeadingCountry">
+                    Versus
+                  </td>
+                  <td class="TableHeadingGround">
+                    Ground
+                  </td>
+                  <td class="TableHeadingHowOut">
+                    How Dismissed   
+                  </td>
+                  <td class="TableHeadingRuns">
+                    Runs
+                  </td>
+                  <td class="TableHeadingRuns">
+                    B/F
+                  </td>
+                  <td class="TableHeadingSR">
+                    S/R
+                  </td>                 
+									<td class="TableHeadingCentre">
+										&nbsp;
+									</td>
+                  <td class="TableHeadingRuns">
+                    Aggr
+                  </td>
+                  <td class="TableHeadingAvg">
+                    Avg
+                  </td>
+                  <td class="TableHeadingSR">
+                    S/R
+                  </td>									
+                </tr>
+            
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    1
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0221">11/02/2012</a>    
+                  </td>
+                  <td align="left">
+                    Zimbabwe    
+                  </td>
+                  <td align="left">
+                    Eden Park    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    0    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    2
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0222">14/02/2012</a>    
+                  </td>
+                  <td align="left">
+                    Zimbabwe    
+                  </td>
+                  <td align="left">
+                    Seddon Park    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    0    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    3
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0225">22/02/2012</a>    
+                  </td>
+                  <td align="left">
+                    South Africa    
+                  </td>
+                  <td align="left">
+                    Eden Park    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    0    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>									
+                </tr>
+                  
+                <tr>
+                  <td colspan="10">
+                    No. of Innings Played = 0
+                  </td>  
+                </tr>
+              </table>
+            
+            <input type="hidden" name="txtPlayerID" value="3934">
+            <br>
+						
+            <table border="0" cellspacing="0" cellpadding="4">
+              <tr>
+                <td align="left">
+                  <a class="LinkOff" href="PlayerOverview_T20.asp?PlayerID=3934">
+                  Michael Bates - Statistical Summary</a>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <a class="LinkOff" href="PlayerMenu.asp#find?data-scroll=false">Player Records and Statistics Menu</a>
+                </td>
+              </tr>
+            </table>      
+          </td>
+          <td valign="top" align="right">
+						<!-- Banner Location  -->
+          </td>
+        </tr>
+      </table>                  
+      <center>
+<br><br>
+<span class="Footer">
+<em>Content on this web site is copyright Howstat Computing Services except where otherwise indicated.</em>
+</span>
+
+<br>
+<em><a href="http://www.howstat.com/cricket/copyright.asp"><span class="FooterLink">Copyright Statement</span></a>&nbsp;|&nbsp;<a href="http://www.howstat.com/cricket/disclaimer.asp"><span class="FooterLink">Disclaimer</span></a></em>
+<br>&nbsp;
+</center>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6621978-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+    </td>
+  </tr>
+</table>
+</form>     
+</body>
+</html>

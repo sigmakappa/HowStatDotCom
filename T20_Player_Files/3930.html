@@ -1,0 +1,1493 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HowSTAT! T20 Cricket - James Faulkner - Progressive Batting</title>
+<meta name="description" content="T20 Cricket - Faulkner, J P - Career batting innings with dates, opponents, venues, 
+progressive average, aggregate, how dismissed and dismissing bowler">
+<link rel="stylesheet" href="../../styles/howstat.css">
+<script type="text/javascript" src="../../includes/JQuery.js"></script>
+<script type="text/javascript">
+<!--
+	jQuery(document).ready(function()
+	{
+		var test = document.getElementById("test");
+		var country = document.getElementById("cboCountry");
+		var d = new Date();
+		d = d.getTime();
+		if (jQuery('#reloadValue').val().length == 0)
+		{
+						jQuery('#reloadValue').val(d);
+						jQuery('body').show();
+		}
+		else
+		{
+						jQuery('#reloadValue').val('');
+						location.reload();
+		}
+	});
+//-->
+</script>
+</head>
+
+<body marginheight="0" marginwidth="0" onunload="">
+<input id="reloadValue" type="hidden" name="reloadValue" value="" />
+<form name="frmStat" action="PlayerProgressBat_T20.asp" method="post">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" height="100%">
+  <tr>
+    <td colspan=3 bgcolor="black" valign="top" height=17>   
+    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+  <tr>
+    <td width="160">&nbsp;
+    </td>
+    <td align="left" valign="middle" class="TextWhite8">
+      <a name="TopOfPage"></a>
+      <a href="http://www.howstat.com/cricket/AboutUs.asp" class="TextWhite8">
+        About Us
+      </a>         
+      |
+      <a href="http://www.howstat.com/cricket/Feedback.asp" class="TextWhite8">
+        Feedback
+      </a>         
+      |
+      <a href="http://www.howstat.com/cricket/AskTheExpert.asp" class="TextWhite8">
+        Ask the Statistician
+      </a>
+      |
+      <a href="http://www.howstat.com/cricket/AdvertisingInfo.asp" class="TextWhite8">
+        Advertise on Howstat
+      </a>
+      |
+      <a href="http://www.howstat.com/cricket//Statistics/Players/PlayerComparison.asp" class="TextWhite8">
+        Compare Players
+      </a>      
+    </td>
+  </tr> 
+</table>
+
+
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="black" valign="top">   
+      <table border="0" cellspacing="0" cellpadding="0" width="162" bgcolor="black">
+  <tr>
+    <td valign="top" align="center" width="100%">
+      <!-- if this line breaks it creates a "bulge" in outline when selected -->
+      <a href="http://www.howstat.com/cricket/home.asp"><img src="http://www.howstat.com/cricket/images/logo.gif" alt="Home Page" title="HOme" border="0" WIDTH="80" HEIGHT="60"><br></a>             
+    </td>
+  </tr>
+</table>  
+<br><br><br><br>
+<table width="162" border="0" cellpadding="2" cellspacing="0" bgcolor="black">
+  <tr>
+    <td>  
+      <a href="http://www.howstat.com/cricket/Statistics/Players/PlayerMenu.asp" class="MainMenu">Players</a>
+    </td>
+  </tr>
+  <tr>
+    <td>  
+      <a href="http://www.howstat.com/cricket/Statistics/Matches/MatchListMenu.asp" class="MainMenu">Match Lists & Scorecards</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>  
+      <a href="http://www.howstat.com/cricket/Statistics/Series/SeriesListMenu.asp" class="MainMenu">Series Lists</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>  
+      <div class="MainMenu2">More Records/Statistics</div>
+      <a href="http://www.howstat.com/cricket/Statistics/AllRounders/AllRoundersMenu.asp" class="SubMenu">All Rounders</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Batting/BattingMenu.asp" class="SubMenu">Batting</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Bowling/BowlingMenu.asp" class="SubMenu">Bowling</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Captaincy/CaptaincyMenu.asp" class="SubMenu">Captaincy</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Countries/CountryList.asp" class="SubMenu">Countries</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Dismissals/DismissalMenu.asp" class="SubMenu">Dismissals</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Fielding/FieldingMenu.asp" class="SubMenu">Fielding</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Grounds/GroundMenu.asp"" class="SubMenu">Grounds</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Matches/MatchMenu.asp" class="SubMenu">Matches</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Series/SeriesMenu.asp" class="SubMenu">Series</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/WicketKeeping/WicketKeepingMenu.asp" class="SubMenu">Wicket Keeping</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/WorldCup/WorldCupMenu.asp" class="SubMenu">World Cup</a><br>            
+      <a href="http://www.howstat.com/cricket/Statistics/WSC/WSCMenu.asp" class="SubMenu">World Series Cricket</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/Misc/MiscMenu.asp" class="SubMenu">Other...</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/IPL/IPLMenu.asp" class="SubMenu">IPL</a><br>
+    </td>
+  </tr>    
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Articles/Milestones.asp" class="MainMenu">Upcoming Milestones</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Articles/RecentRecords.asp" class="MainMenu">Recent Records</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>  
+      <div class="MainMenu2">Ratings</div>
+      <a href="http://www.howstat.com/cricket/Statistics/WorldXI.asp" class="SubMenu">World XI (Test)</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/WorldXI_ODI.asp" class="SubMenu">World XI (ODI)</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/TopTen.asp" class="SubMenu">Top Ten (Test)</a><br>
+      <a href="http://www.howstat.com/cricket/Statistics/TopTen_ODI.asp" class="SubMenu">Top Ten (ODI)</a><br>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Search.asp" class="MainMenu">Search HowSTAT</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Quiz/Quiz.asp" class="MainMenu">HowSTAT Quiz</a>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <a href="http://www.howstat.com/cricket/Links.asp" class="MainMenu">Links</a>
+    </td>
+  </tr>    
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td>
+			<a class="MenuLinkOff"  href="http://www.howstat.com/cricket/Promotions/CounterAttackingBatting.asp" target="CricketSportsbook">Counter Attacking Batting</a>
+    </td>
+  </tr>	
+  <tr>
+    <td>  
+      <a class="MainMenu" href="http://www.cricketgames.me" target="ExternalLink">Cricket Games</a>
+    </td>
+  </tr>		
+</table>
+
+    </td>
+    <td>&nbsp;
+    </td>
+    <td valign="top" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr><td height=3></td></tr>
+        <tr>
+          <td class="Banner3" width="100%" nowrap align="left" height="25">
+            &nbsp;
+            James Faulkner (Australia)
+            - T20 Internationals
+          </td>
+        </tr>
+        <tr>
+          <td height="7">
+          </td>
+        </tr>
+      </table>
+			
+      <table border=0 width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top">
+            <div class="TextSubHead">
+            Batting - Progressive Average and Aggregate
+            </div>
+
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;Versus
+                </td>
+                <td align="left">
+                  &nbsp;
+                  <select name="cboVersus" size="1" style="width: 125">
+                  <option value=""  
+                selected  
+                    >&lt;All Countries&gt</option>
+                
+                      <option value="10"
+                  
+                    >Bangladesh</option>
+                
+                      <option value="02"
+                  
+                    >England</option>
+                
+                      <option value="03"
+                  
+                    >India</option>
+                
+                      <option value="04"
+                  
+                    >New Zealand</option>
+                
+                      <option value="05"
+                  
+                    >Pakistan</option>
+                
+                      <option value="06"
+                  
+                    >South Africa</option>
+                
+                      <option value="07"
+                  
+                    >Sri Lanka</option>
+                
+                      <option value="08"
+                  
+                    >West Indies</option>
+                    
+                  </select>
+                </td>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;&nbsp;&nbsp;at
+                </td>
+                <td align="left" colspan=2>
+                  &nbsp;
+                  <select name="cboGrounds" size="1" style="width: 290">
+                    <option value=""  
+                  selected  
+                      >&lt;All Grounds&gt</option>
+                  
+                        <option value="001"
+                    
+                      >Adelaide Oval</option>
+                  
+                        <option value="218"
+                    
+                      >ANZ Stadium</option>
+                  
+                        <option value="068"
+                    
+                      >Brisbane Cricket Ground</option>
+                  
+                        <option value="209"
+                    
+                      >Dubai International Cricket Stadium</option>
+                  
+                        <option value="224"
+                    
+                      >Himachal Pradesh Cricket Association Stadium</option>
+                  
+                        <option value="031"
+                    
+                      >M Chinnaswamy Stadium</option>
+                  
+                        <option value="042"
+                    
+                      >Melbourne Cricket Ground</option>
+                  
+                        <option value="066"
+                    
+                      >New Wanderers Stadium</option>
+                  
+                        <option value="045"
+                    
+                      >Newlands</option>
+                  
+                        <option value="215"
+                    
+                      >Pallekele International Cricket Stadium</option>
+                  
+                        <option value="074"
+                    
+                      >Punjab Cricket Association IS Bindra Stadium</option>
+                  
+                        <option value="033"
+                    
+                      >R Premadasa Stadium</option>
+                  
+                        <option value="154"
+                    
+                      >Riverside Ground</option>
+                  
+                        <option value="222"
+                    
+                      >Saurashtra Cricket Association Stadium</option>
+                  
+                        <option value="198"
+                    
+                      >Shere Bangla National Stadium</option>
+                  
+                        <option value="237"
+                    
+                      >Simmonds Stadium</option>
+                  
+                        <option value="184"
+                    
+                      >The Rose Bowl</option>
+                      
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;Year
+                </td>
+                <td align="left">
+                  &nbsp;
+                  <select name="cboYears" size="1" style="width: 125">
+                  <option value="0"  
+                  
+                    >&lt;All Years&gt</option>
+                  
+                      <option value="2012"
+                  
+                    >2012</option>
+                
+                      <option value="2013"
+                  
+                    >2013</option>
+                
+                      <option value="2014"
+                  
+                    >2014</option>
+                
+                      <option value="2016"
+                  
+                    >2016</option>
+                
+                      <option value="2017"
+                  
+                    >2017</option>
+                    
+                  </select>
+              </td>
+                <td class="TextBlackBold9" align="left">
+                  &nbsp;&nbsp;&nbsp;Series
+                </td>
+                <td align="left">
+                  &nbsp;
+                  <select name="cboSeries" size="1" style="width: 290">
+                    <option value=""  
+                  selected  
+                      >&lt;All Series&gt</option>
+                  
+                      <option value="0080"
+                  
+                    >2011-2012 2011-2012 Australia v. India</option>
+                
+                      <option value="0104"
+                  
+                    >2012-2013 2012-2013 Australia v. Sri Lanka</option>
+                
+                      <option value="0106"
+                  
+                    >2012-2013 2012-2013 Australia v. West Indies</option>
+                
+                      <option value="0120"
+                  
+                    >2013 2013 England v. Australia</option>
+                
+                      <option value="0136"
+                  
+                    >2013-2014 2013-2014 ICC World Twenty20</option>
+                
+                      <option value="0122"
+                  
+                    >2013-2014 2013-2014 India v. Australia</option>
+                
+                      <option value="0142"
+                  
+                    >2014-2015 2014-2015 Australia v. South Africa</option>
+                
+                      <option value="0141"
+                  
+                    >2014-2015 2014-2015 Pakistan v. Australia</option>
+                
+                      <option value="0172"
+                  
+                    >2015-2016 2015-2016 Australia v. India</option>
+                
+                      <option value="0184"
+                  
+                    >2015-2016 2015-2016 ICC World Twenty20</option>
+                
+                      <option value="0183"
+                  
+                    >2015-2016 2015-2016 South Africa v. Australia</option>
+                
+                      <option value="0198"
+                  
+                    >2016-2017 2016-2017 Australia v. Sri Lanka</option>
+                
+                      <option value="0189"
+                  
+                    >2016-2017 2016-2017 Sri Lanka v. Australia</option>
+                    
+                  </select>
+                </td>
+                <td align="right">
+                  &nbsp;
+                  <input type="submit" name="btnSubmit" value="Find" style="position: relative; top: -2px">
+                </td>
+              </tr>
+            </table>      
+            <div class="Spacer6">&nbsp;</div>
+            
+							
+							<table class="TableLined" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td class="TableHeadingLeft" colspan="9">
+                    &nbsp;
+                  </td>
+                  <td class="TableHeadingCentre" colspan="3">
+                    Progressive
+                  </td>
+                <tr>  
+                <tr>
+                  <td class="TableHeadingNO">
+                    &nbsp;
+                  </td>
+                  <td class="TableHeadingDate">
+                    Date
+                  </td>
+                  <td class="TableHeadingCountry">
+                    Versus
+                  </td>
+                  <td class="TableHeadingGround">
+                    Ground
+                  </td>
+                  <td class="TableHeadingHowOut">
+                    How Dismissed   
+                  </td>
+                  <td class="TableHeadingRuns">
+                    Runs
+                  </td>
+                  <td class="TableHeadingRuns">
+                    B/F
+                  </td>
+                  <td class="TableHeadingSR">
+                    S/R
+                  </td>                 
+									<td class="TableHeadingCentre">
+										&nbsp;
+									</td>
+                  <td class="TableHeadingRuns">
+                    Aggr
+                  </td>
+                  <td class="TableHeadingAvg">
+                    Avg
+                  </td>
+                  <td class="TableHeadingSR">
+                    S/R
+                  </td>									
+                </tr>
+            
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    1
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0219">01/02/2012</a>    
+                  </td>
+                  <td align="left">
+                    India    
+                  </td>
+                  <td align="left">
+                    ANZ Stadium    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    0    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    2
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0303">28/01/2013</a>    
+                  </td>
+                  <td align="left">
+                    Sri Lanka    
+                  </td>
+                  <td align="left">
+                    Melbourne Cricket Ground    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    0    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>
+                  <td align="right">
+                    &nbsp;    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    3
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0306">13/02/2013</a>    
+                  </td>
+                  <td align="left">
+                    West Indies    
+                  </td>
+                  <td align="left">
+                    Brisbane Cricket Ground    
+                  </td>
+                  <td align="left">
+                    c D J G Sammy b K A Pollard    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    7    
+                  </td>
+                  <td align="right">
+										6
+                  </td>
+                  <td align="right">
+										116.67
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    7    
+                  </td>
+                  <td align="right">
+                    7.00    
+                  </td>
+                  <td align="right">
+                    116.67    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    4
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0332">29/08/2013</a>    
+                  </td>
+                  <td align="left">
+                    England    
+                  </td>
+                  <td align="left">
+                    The Rose Bowl    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    5*    
+                  </td>
+                  <td align="right">
+										3
+                  </td>
+                  <td align="right">
+										166.67
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    12    
+                  </td>
+                  <td align="right">
+                    12.00    
+                  </td>
+                  <td align="right">
+                    133.33    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    5
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0333">31/08/2013</a>    
+                  </td>
+                  <td align="left">
+                    England    
+                  </td>
+                  <td align="left">
+                    Riverside Ground    
+                  </td>
+                  <td align="left">
+                    c E J G Morgan b J W Dernbach    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    5    
+                  </td>
+                  <td align="right">
+										5
+                  </td>
+                  <td align="right">
+										100.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    17    
+                  </td>
+                  <td align="right">
+                    8.50    
+                  </td>
+                  <td align="right">
+                    121.43    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    6
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0335">10/10/2013</a>    
+                  </td>
+                  <td align="left">
+                    India    
+                  </td>
+                  <td align="left">
+                    Saurashtra Cricket Association Stadium    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    10*    
+                  </td>
+                  <td align="right">
+										5
+                  </td>
+                  <td align="right">
+										200.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    27    
+                  </td>
+                  <td align="right">
+                    13.50    
+                  </td>
+                  <td align="right">
+                    142.11    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    7
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0394">28/03/2014</a>    
+                  </td>
+                  <td align="left">
+                    West Indies    
+                  </td>
+                  <td align="left">
+                    Shere Bangla National Stadium    
+                  </td>
+                  <td align="left">
+                    c D J J Bravo b K Santokie    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    13    
+                  </td>
+                  <td align="right">
+										17
+                  </td>
+                  <td align="right">
+										76.47
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    40    
+                  </td>
+                  <td align="right">
+                    13.33    
+                  </td>
+                  <td align="right">
+                    111.11    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    8
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0412">05/10/2014</a>    
+                  </td>
+                  <td align="left">
+                    Pakistan    
+                  </td>
+                  <td align="left">
+                    Dubai International Cricket Stadium    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    7*    
+                  </td>
+                  <td align="right">
+										13
+                  </td>
+                  <td align="right">
+										53.85
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    47    
+                  </td>
+                  <td align="right">
+                    15.67    
+                  </td>
+                  <td align="right">
+                    95.92    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    9
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0413">05/11/2014</a>    
+                  </td>
+                  <td align="left">
+                    South Africa    
+                  </td>
+                  <td align="left">
+                    Adelaide Oval    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    41*    
+                  </td>
+                  <td align="right">
+										33
+                  </td>
+                  <td align="right">
+										124.24
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    88    
+                  </td>
+                  <td align="right">
+                    29.33    
+                  </td>
+                  <td align="right">
+                    107.32    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    10
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0414">07/11/2014</a>    
+                  </td>
+                  <td align="left">
+                    South Africa    
+                  </td>
+                  <td align="left">
+                    Melbourne Cricket Ground    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    88    
+                  </td>
+                  <td align="right">
+                    29.33    
+                  </td>
+                  <td align="right">
+                    107.32    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    11
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0415">09/11/2014</a>    
+                  </td>
+                  <td align="left">
+                    South Africa    
+                  </td>
+                  <td align="left">
+                    ANZ Stadium    
+                  </td>
+                  <td align="left">
+                    c D A Miller b M de Lange    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    9    
+                  </td>
+                  <td align="right">
+										8
+                  </td>
+                  <td align="right">
+										112.50
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    97    
+                  </td>
+                  <td align="right">
+                    24.25    
+                  </td>
+                  <td align="right">
+                    107.78    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    12
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0498">26/01/2016</a>    
+                  </td>
+                  <td align="left">
+                    India    
+                  </td>
+                  <td align="left">
+                    Adelaide Oval    
+                  </td>
+                  <td align="left">
+                    b J J Bumrah    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    10    
+                  </td>
+                  <td align="right">
+										7
+                  </td>
+                  <td align="right">
+										142.86
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    107    
+                  </td>
+                  <td align="right">
+                    21.40    
+                  </td>
+                  <td align="right">
+                    110.31    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    13
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0499">29/01/2016</a>    
+                  </td>
+                  <td align="left">
+                    India    
+                  </td>
+                  <td align="left">
+                    Melbourne Cricket Ground    
+                  </td>
+                  <td align="left">
+                    st M S Dhoni b R A Jadeja    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    10    
+                  </td>
+                  <td align="right">
+										7
+                  </td>
+                  <td align="right">
+										142.86
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    117    
+                  </td>
+                  <td align="right">
+                    19.50    
+                  </td>
+                  <td align="right">
+                    112.50    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    14
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0533">06/03/2016</a>    
+                  </td>
+                  <td align="left">
+                    South Africa    
+                  </td>
+                  <td align="left">
+                    New Wanderers Stadium    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    7*    
+                  </td>
+                  <td align="right">
+										4
+                  </td>
+                  <td align="right">
+										175.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    124    
+                  </td>
+                  <td align="right">
+                    20.67    
+                  </td>
+                  <td align="right">
+                    114.81    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    15
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0539">09/03/2016</a>    
+                  </td>
+                  <td align="left">
+                    South Africa    
+                  </td>
+                  <td align="left">
+                    Newlands    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    124    
+                  </td>
+                  <td align="right">
+                    20.67    
+                  </td>
+                  <td align="right">
+                    114.81    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    16
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0552">18/03/2016</a>    
+                  </td>
+                  <td align="left">
+                    New Zealand    
+                  </td>
+                  <td align="left">
+                    Himachal Pradesh Cricket Association Stadium    
+                  </td>
+                  <td align="left">
+                    c M J Guptill b C J Anderson    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    2    
+                  </td>
+                  <td align="right">
+										4
+                  </td>
+                  <td align="right">
+										50.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    126    
+                  </td>
+                  <td align="right">
+                    18.00    
+                  </td>
+                  <td align="right">
+                    112.50    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    17
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0557">21/03/2016</a>    
+                  </td>
+                  <td align="left">
+                    Bangladesh    
+                  </td>
+                  <td align="left">
+                    M Chinnaswamy Stadium    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    5*    
+                  </td>
+                  <td align="right">
+										3
+                  </td>
+                  <td align="right">
+										166.67
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    131    
+                  </td>
+                  <td align="right">
+                    18.71    
+                  </td>
+                  <td align="right">
+                    113.91    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    18
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0561">25/03/2016</a>    
+                  </td>
+                  <td align="left">
+                    Pakistan    
+                  </td>
+                  <td align="left">
+                    Punjab Cricket Association IS Bindra Stadium    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    131    
+                  </td>
+                  <td align="right">
+                    18.71    
+                  </td>
+                  <td align="right">
+                    113.91    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    19
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0566">27/03/2016</a>    
+                  </td>
+                  <td align="left">
+                    India    
+                  </td>
+                  <td align="left">
+                    Punjab Cricket Association IS Bindra Stadium    
+                  </td>
+                  <td align="left">
+                    c V Kohli b H H Pandya    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    10    
+                  </td>
+                  <td align="right">
+										10
+                  </td>
+                  <td align="right">
+										100.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    141    
+                  </td>
+                  <td align="right">
+                    17.63    
+                  </td>
+                  <td align="right">
+                    112.80    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    20
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0578">06/09/2016</a>    
+                  </td>
+                  <td align="left">
+                    Sri Lanka    
+                  </td>
+                  <td align="left">
+                    Pallekele International Cricket Stadium    
+                  </td>
+                  <td align="left">
+                    did not bat    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    -    
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+                  <td align="right">
+										-
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    141    
+                  </td>
+                  <td align="right">
+                    17.63    
+                  </td>
+                  <td align="right">
+                    112.80    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    21
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0581">09/09/2016</a>    
+                  </td>
+                  <td align="left">
+                    Sri Lanka    
+                  </td>
+                  <td align="left">
+                    R Premadasa Stadium    
+                  </td>
+                  <td align="left">
+                    run out    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    1    
+                  </td>
+                  <td align="right">
+										2
+                  </td>
+                  <td align="right">
+										50.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    142    
+                  </td>
+                  <td align="right">
+                    15.78    
+                  </td>
+                  <td align="right">
+                    111.81    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    22
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0610">17/02/2017</a>    
+                  </td>
+                  <td align="left">
+                    Sri Lanka    
+                  </td>
+                  <td align="left">
+                    Melbourne Cricket Ground    
+                  </td>
+                  <td align="left">
+                    not out    
+                  </td>
+                  <td align="right" >
+                    14*    
+                  </td>
+                  <td align="right">
+										7
+                  </td>
+                  <td align="right">
+										200.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    156    
+                  </td>
+                  <td align="right">
+                    17.33    
+                  </td>
+                  <td align="right">
+                    116.42    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#E3FBE9">
+                     
+                  <td align="left">
+                    23
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0611">19/02/2017</a>    
+                  </td>
+                  <td align="left">
+                    Sri Lanka    
+                  </td>
+                  <td align="left">
+                    Simmonds Stadium    
+                  </td>
+                  <td align="left">
+                    lbw b S L Malinga    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    1    
+                  </td>
+                  <td align="right">
+										2
+                  </td>
+                  <td align="right">
+										50.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    157    
+                  </td>
+                  <td align="right">
+                    15.70    
+                  </td>
+                  <td align="right">
+                    115.44    
+                  </td>									
+                </tr>
+              
+                    <tr bgcolor="#FFFFFF">
+                     
+                  <td align="left">
+                    24
+                  </td>
+                  <td align="left">   
+                    <a class="LinkNormal" href="../Matches/MatchScorecard_T20.asp?MatchCode=0612">22/02/2017</a>    
+                  </td>
+                  <td align="left">
+                    Sri Lanka    
+                  </td>
+                  <td align="left">
+                    Adelaide Oval    
+                  </td>
+                  <td align="left">
+                    c C K Kapugedera b M D Shanaka    
+                  </td>
+                  <td align="right" class="AsteriskSpace">
+                    2    
+                  </td>
+                  <td align="right">
+										2
+                  </td>
+                  <td align="right">
+										100.00
+                  </td>
+									<td bgcolor="#FFFFEE">
+										&nbsp;
+									</td>									
+                  <td align="right">
+                    159    
+                  </td>
+                  <td align="right">
+                    14.45    
+                  </td>
+                  <td align="right">
+                    115.22    
+                  </td>									
+                </tr>
+                  
+                <tr>
+                  <td colspan="10">
+                    No. of Innings Played = 18
+                  </td>  
+                </tr>
+              </table>
+            
+            <input type="hidden" name="txtPlayerID" value="3930">
+            <br>
+						
+            <table border="0" cellspacing="0" cellpadding="4">
+              <tr>
+                <td align="left">
+                  <a class="LinkOff" href="PlayerOverview_T20.asp?PlayerID=3930">
+                  James Faulkner - Statistical Summary</a>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <a class="LinkOff" href="PlayerMenu.asp#find?data-scroll=false">Player Records and Statistics Menu</a>
+                </td>
+              </tr>
+            </table>      
+          </td>
+          <td valign="top" align="right">
+						<!-- Banner Location  -->
+          </td>
+        </tr>
+      </table>                  
+      <center>
+<br><br>
+<span class="Footer">
+<em>Content on this web site is copyright Howstat Computing Services except where otherwise indicated.</em>
+</span>
+
+<br>
+<em><a href="http://www.howstat.com/cricket/copyright.asp"><span class="FooterLink">Copyright Statement</span></a>&nbsp;|&nbsp;<a href="http://www.howstat.com/cricket/disclaimer.asp"><span class="FooterLink">Disclaimer</span></a></em>
+<br>&nbsp;
+</center>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6621978-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+    </td>
+  </tr>
+</table>
+</form>     
+</body>
+</html>
